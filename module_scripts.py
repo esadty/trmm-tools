@@ -53135,7 +53135,7 @@ scripts = [
 	(assign, "$adimi_tool_crash_server_old_value", 0),#0 is default
 	(assign, "$adimi_tool_rainfall_typ", 0),#0 is default
 	(assign, "$adimi_tool_horses_fade_out_in_sec", 180),#180s=3min
-	(assign, "$adimi_tool_horses_fade_out", 1),#1 is default
+	(assign, "$adimi_tool_horses_fade_out", 0),#1 is default
 	(assign, "$g_horses_are_avaliable", 1),#1 is default
 	(assign, "$gotha_dev_mode", 0),#Develope mode  (  active by pressing ctrl + alt + F5 )
 	(assign, "$adimi_tool_infantry_limit_value", 100),#In % 0-100

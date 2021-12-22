@@ -13093,7 +13093,7 @@ mission_templates = [
 				(try_begin),
 				  (eq,"$adimi_tool_wnl_mof",1),
 				  (store_sub, ":remaining_time", "$g_multiplayer_round_max_seconds", ":seconds_past_till_round_started"),
-				  (le, ":remaining_time", 140),
+				  (le, ":remaining_time", 140), # Last 2:20 secs
 				  (assign,"$adimi_tool_mof",1),
 				(else_try),#Usual flag spawn
                   (store_div, "$g_multiplayer_round_max_seconds_div_2", "$g_multiplayer_round_max_seconds", 2),

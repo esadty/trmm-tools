@@ -233,4 +233,9 @@ sounds = [
  ("ccoop_sea_raider_taunt_3",sf_2d|sf_vol_8, ["encounter_sea_raider_10.ogg"]),
  ("sounds_end", sf_2d|sf_priority_10|sf_vol_10, ["enemy_scored_a_point.ogg"]),
  #INVASION MODE END
+
+ # Made by Eagle' 23.12.2021
+ ("fac1_win_music", sf_2d|sf_priority_10|sf_vol_10, ["fac1_win_music.wav"]),
+ ("fac2_win_music", sf_2d|sf_priority_10|sf_vol_10, ["fac2_win_music.wav"]),
+ ("lose_music", sf_2d|sf_priority_10|sf_vol_10, ["lose_music.wav"]),
 ]

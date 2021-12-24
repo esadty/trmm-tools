@@ -5143,9 +5143,19 @@ presentations = [
             (lt, "$my_team_at_start_of_round", 2),
             (try_begin),
               (eq, "$my_team_at_start_of_round", ":winner_agent_team"),
-              (assign, ":text_font_color", 0xFF33DD11),
+              (assign, ":text_font_color", 0xFF33DD11), # green text
+              # Victory/Defeat Music (Made by. Eagle' 23.12.2021)
+              (team_get_faction, ":faction_of_winner_team", ":winner_agent_team"),
+              (try_begin),
+                (eq, ":faction_of_winner_team", "fac_kingdom_1"), # if player won as Swadians (fac_kingdom_1)
+                (play_sound, "snd_fac1_win_music"), # play fac1 win sound
+              (else_try), # OR if player won as Vaegirs (fac_kingdom_2)
+                (play_sound, "snd_fac2_win_music"), # play fac2 win sound
+              (try_end),
+              # END
             (else_try),
-              (assign, ":text_font_color", 0xFFFF4422),
+              (assign, ":text_font_color", 0xFFFF4422), # red text
+              (play_sound, "snd_lose_music"), # play lose sound
             (try_end),
           (try_end),
 
